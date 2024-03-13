@@ -20,7 +20,6 @@ body{
     width: 100%;
     justify-content: center;
     background-color: var(--main---white);
-    overflow: hidden;
 }
 .btn-primary{
     border-radius: 8px;
