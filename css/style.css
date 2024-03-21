@@ -13,8 +13,52 @@
 @media screen and (min-width: 1420px) {
     .container {
         margin: auto;
-        width: 1420px;
+        max-width: 1460px;
+        width: 100%;
+        padding: 0 20px;
     }
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--main-body);
+}
+
+h2 {
+    font-family: var(--font-family);
+    line-height: 123%;
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: 0.02em;
+    color: var(--main-body);
+    margin: unset;
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--main-body);
+}
+
+h5 {
+    font-family: var(--font-family);
+    line-height: 156%;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--main-primary);
+    margin: unset;
+}
+
+p {
+    margin: unset;
+}
+
+.colored-text {
+    color: var(--main-primary);
 }
 
 .btn-primary {
@@ -75,7 +119,6 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 20px 0 20px;
 }
 
 .logo {
@@ -102,9 +145,8 @@ body {
     display: flex;
     align-items: center;
     font-family: var(--font-family);
-    text-underline: none;
     list-style-type: none;
-    padding: 0 20px 0;
+    padding: 0 0 0 20px;
 }
 
 a {
@@ -121,7 +163,7 @@ a {
     padding: 168px 385px;
     margin-bottom: 200px;
     border-radius: 24px;
-    background: url(https://media.discordapp.net/attachments/691451915044913185/1219810867873583155/bg.png?ex=660ca865&is=65fa3365&hm=e6a577a7e8f284e570e3398f198f4f24c1fb54ff98922daa852e6aab5d6fdacb&=&format=webp&quality=lossless) no-repeat;
+    background: rgba(237, 233, 246, .25) center/100% url(https://media.discordapp.net/attachments/691451915044913185/1219810867873583155/bg.png?ex=660ca865&is=65fa3365&hm=e6a577a7e8f284e570e3398f198f4f24c1fb54ff98922daa852e6aab5d6fdacb&=&format=webp&quality=lossless) no-repeat;
 }
 
 .hero__content h1 {
@@ -150,11 +192,8 @@ a {
     padding: 0 0 48px 0;
 }
 
-.hr-line h2 {
+.hr-line h3 {
     margin: 0 20px 0 20px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    color: var(--main-body);
 }
 
 .list__sponsors {
@@ -163,4 +202,160 @@ a {
     align-items: center;
     max-width: 1180px;
     margin: auto;
+}
+
+.fundraising {
+    height: 1048px;
+}
+
+.fundraising__content {
+    padding: 200px 0;
+    width: 1180px;
+    height: 648px;
+    margin: auto;
+}
+
+.fundraising__content h2 {
+    position: absolute;
+}
+
+.list__items-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.list__items-numbers p {
+    font-family: var(--font-family);
+}
+
+.list__items-numbers li {
+    border-radius: 8px;
+    box-shadow: 0 14px 64px -4px rgba(35, 21, 91, 0.05), 0 8px 12px -6px rgba(35, 21, 91, 0.05);
+    background: var(--main---white);
+    width: 580px;
+    margin-bottom: 10px;
+}
+
+.list__items-numbers ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list__items ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: unset;
+    margin: 40px 0;
+    align-items: unset;
+}
+
+.list__items li {
+    flex: 0 1 calc(50% - 10px);
+    margin: unset;
+    padding: unset;
+    border-radius: 8px;
+    box-shadow: 0 14px 64px -4px rgba(35, 21, 91, 0.05), 0 8px 12px -6px rgba(35, 21, 91, 0.05);
+    background: var(--main---white);
+}
+
+.list__items li .list__item {
+    display: flex;
+    padding: 24px;
+    width: 100%;
+}
+
+.list__items p {
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--main-body);
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.item-number {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--main-primary);
+    margin-right: 12px;
+    margin-bottom: 45px;
+}
+
+.for_projects {
+    border-radius: 250px 0 0 0;
+    background: rgba(237, 233, 246, .25) center/100% no-repeat url(https://media.discordapp.net/attachments/691451915044913185/1220364514051100682/bg.png?ex=660eac05&is=65fc3705&hm=c3388af0a5ec31f45cec47719aa4ccefa73a48b2669f94d7933316e79ff1a076&=&format=webp&quality=lossless&);
+}
+
+.for_projects .container {
+    max-width: 1180px;
+    padding: 200px 0;
+}
+
+.for_projects__content h5 {
+    line-height: 156%;
+}
+
+.for_projects__content h2 {
+    line-height: 123%;
+    margin: 0 0 10px;
+}
+
+.for_projects__content .for_projects__content-description {
+    font-family: var(--font-family);
+    max-width: 616px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--main-body);
+}
+
+.list__item-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main---gray);
+    line-height: 24px;
+}
+
+.list__item-checkmark {
+    margin-right: 12px;
+}
+
+.for_investors {
+    border-radius: 0 250px 0 0;
+    background: rgba(237, 233, 246, .25) center/100% no-repeat url(https://cdn.discordapp.com/attachments/691451915044913185/1220354599576145940/bg.png?ex=660ea2c9&is=65fc2dc9&hm=1ca7504f6c6b3c890ba7e9532e0f4806f74e3660f4251e76502baedad6245b2f&);
+}
+
+.for_investors .container {
+    max-width: 1180px;
+    padding: 200px 0;
+}
+
+.about .container {
+    max-width: 1920px;
+    padding: 0 0 200px;
+}
+
+.about__content {
+    display: flex;
+    max-width: 0;
+    margin: auto;
+}
+
+.about__content-description {
+    position: absolute;
+    max-width: 640px;
+    
+}
+
+.about__content img {
+    align-items: unset;
+}
+
+.sponsors-footer {
+    padding: 0 0 200px 0;
 }
