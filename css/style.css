@@ -159,9 +159,17 @@ h5 {
     margin: 0;
 }
 
-.nav__menu nav, ul, li {
+.main-nav ul, li {
     display: flex;
     align-items: center;
+}
+
+.main-nav li {
+    margin-left: 32px;
+}
+
+.main-nav .btn {
+    margin-left: 32px;
 }
 
 a {
@@ -178,7 +186,7 @@ a {
     padding: 168px 385px;
     margin-bottom: 200px;
     border-radius: 24px;
-    background: rgba(237, 233, 246, .25) center/100% url(https://media.discordapp.net/attachments/691451915044913185/1219810867873583155/bg.png?ex=660ca865&is=65fa3365&hm=e6a577a7e8f284e570e3398f198f4f24c1fb54ff98922daa852e6aab5d6fdacb&=&format=webp&quality=lossless) no-repeat;
+    background: rgba(237, 233, 246, .25) center/100% url(https://i.imgur.com/MiwJwOU.png) no-repeat;
 }
 
 .hero__content h1 {
@@ -232,6 +240,7 @@ a {
 
 .fundraising__content h2 {
     position: absolute;
+    max-width: 370px;
 }
 
 .list__items-numbers {
@@ -306,7 +315,7 @@ a {
 
 .for_projects {
     border-radius: 250px 0 0 0;
-    background: rgba(237, 233, 246, .25) center/100% no-repeat url(https://media.discordapp.net/attachments/691451915044913185/1220364514051100682/bg.png?ex=660eac05&is=65fc3705&hm=c3388af0a5ec31f45cec47719aa4ccefa73a48b2669f94d7933316e79ff1a076&=&format=webp&quality=lossless&);
+    background: rgba(237, 233, 246, .25) center/100% no-repeat url(https://i.imgur.com/2naAUL9.png);
 }
 
 .for_projects .container {
@@ -346,7 +355,11 @@ a {
 
 .for_investors {
     border-radius: 0 250px 0 0;
-    background: rgba(237, 233, 246, .25) center/100% no-repeat url(https://cdn.discordapp.com/attachments/691451915044913185/1220354599576145940/bg.png?ex=660ea2c9&is=65fc2dc9&hm=1ca7504f6c6b3c890ba7e9532e0f4806f74e3660f4251e76502baedad6245b2f&);
+    background: rgba(237, 233, 246, .25) center/100% no-repeat url(https://i.imgur.com/spg7HvG.png);
+}
+
+.for_investors h2 {
+    max-width: 887px;
 }
 
 .for_investors .container {
@@ -395,8 +408,9 @@ a {
 }
 
 .main-footer {
-    background: var(--main-body) center/100% no-repeat url(https://media.discordapp.net/attachments/691451915044913185/1221800913476255815/bg-footer.png?ex=6613e5c5&is=660170c5&hm=151d69c5f74e2aa338d1956e0321fd2aca264f6d841aec87234b8c8a2bcc5f22&=&format=webp&quality=lossless);
-    padding: 179px 0;
+    border-radius: 250px 0 0 0;
+    background: var(--main-body) center/100% no-repeat url(https://i.imgur.com/6VXLbDM.png);
+    padding: 176px 0;
 }
 
 .footer__cols {
@@ -418,6 +432,9 @@ a {
     line-height: 123%;
     letter-spacing: 0.02em;
     margin-bottom: 12px;
+    max-width: 437px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__head p {
@@ -453,7 +470,8 @@ a {
     width: 340px;
     height: 48px;
 }
-.footer__form-btn .btn-primary{
+
+.footer__form-btn .btn-primary {
     border: unset;
 }
 
