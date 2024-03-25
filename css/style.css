@@ -25,6 +25,12 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main---white);
+}
+
 h1 {
     font-family: var(--font-family);
     font-weight: 700;
@@ -59,10 +65,6 @@ h5 {
     margin: unset;
 }
 
-p {
-    margin: unset;
-}
-
 .colored-text {
     color: var(--main-primary);
 }
@@ -81,6 +83,14 @@ p {
     line-height: 200%;
 }
 
+.btn-primary:hover {
+    background: var(--main---gray);
+}
+
+.btn-primary:active {
+    background: var(--main-body);
+}
+
 .btn-secondary {
     border-radius: 8px;
     width: 232px;
@@ -96,18 +106,21 @@ p {
     line-height: 200%;
 }
 
+.btn-secondary:hover {
+    background: var(--main---gray-light);
+}
+
+.btn-secondary:active {
+    background: var(--main-body);
+    border: unset;
+    color: var(--main---white);
+}
+
 .btn__wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 476px;
-}
-
-body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--main---white);
 }
 
 .main-header {
@@ -149,9 +162,6 @@ body {
 .nav__menu nav, ul, li {
     display: flex;
     align-items: center;
-    font-family: var(--font-family);
-    list-style-type: none;
-    padding: 0 0 0 20px;
 }
 
 a {
@@ -233,6 +243,9 @@ a {
 
 .list__items-numbers p {
     font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--main-body);
 }
 
 .list__items-numbers li {
@@ -240,13 +253,23 @@ a {
     box-shadow: 0 14px 64px -4px rgba(35, 21, 91, 0.05), 0 8px 12px -6px rgba(35, 21, 91, 0.05);
     background: var(--main---white);
     width: 580px;
-    margin-bottom: 10px;
+    padding: 24px;
+    align-items: unset;
 }
 
 .list__items-numbers ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
+}
+
+.item-number {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--main-primary);
+    margin-right: 12px;
 }
 
 .list__items ul {
@@ -279,15 +302,6 @@ a {
     color: var(--main-body);
     line-height: 24px;
     margin-bottom: 4px;
-}
-
-.item-number {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--main-primary);
-    margin-right: 12px;
-    margin-bottom: 45px;
 }
 
 .for_projects {
@@ -351,14 +365,17 @@ a {
     max-width: 579px;
     margin-left: 260px;
 }
-.about__content .logo{
+
+.about__content .logo {
     margin-bottom: 16px;
 
 }
+
 .about__content h2 {
     margin-bottom: 52px;
 }
-.about__content p{
+
+.about__content p {
     font-size: 18px;
     line-height: 156%;
     color: var(--main-body);
@@ -371,4 +388,97 @@ a {
 
 .sponsors-footer {
     padding: 0 0 200px 0;
+}
+
+.main-footer .container {
+    max-width: 1180px;
+}
+
+.main-footer {
+    background: var(--main-body) center/100% no-repeat url(https://media.discordapp.net/attachments/691451915044913185/1221800913476255815/bg-footer.png?ex=6613e5c5&is=660170c5&hm=151d69c5f74e2aa338d1956e0321fd2aca264f6d841aec87234b8c8a2bcc5f22&=&format=webp&quality=lossless);
+    padding: 179px 0;
+}
+
+.footer__cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__head {
+    margin-bottom: 64px;
+}
+
+.footer__col-head {
+    max-width: 700px;
+}
+
+.footer__head h2 {
+    font-family: var(--font-family);
+    color: var(--main---white);
+    line-height: 123%;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px;
+}
+
+.footer__head p {
+    font-family: var(--font-family);
+    color: var(--main---gray-light);
+    font-size: 18px;
+    line-height: 156%;
+}
+
+.footer__form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.footer__form-field {
+    flex: 0 1;
+}
+
+.footer__form-field label {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--main---gray-light);
+    margin-bottom: 4px;
+}
+
+.footer__form-field input {
+    border: 2px solid #f4f5f4;
+    border-radius: 8px;
+    padding: 14px 12px;
+    width: 340px;
+    height: 48px;
+}
+.footer__form-btn .btn-primary{
+    border: unset;
+}
+
+.footer__col-social h5 {
+    font-family: var(--font-family);
+    color: var(--main---gray-light);
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.footer__col-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.social__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 40px;
 }
