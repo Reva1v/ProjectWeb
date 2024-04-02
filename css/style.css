@@ -11,14 +11,11 @@
 :root {
     --font-family: "Poppins", sans-serif;
 }
-
-@media screen and (min-width: 1420px) {
-    .container {
-        margin: auto;
-        max-width: 1460px;
-        width: 100%;
-        padding: 0 20px;
-    }
+.container {
+    margin: auto;
+    max-width: 1460px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 * {
@@ -36,7 +33,7 @@ body {
 h1 {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4rem;
     text-align: center;
     color: var(--main-body);
 }
@@ -45,7 +42,7 @@ h2 {
     font-family: var(--font-family);
     line-height: 123%;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 3.25rem;
     letter-spacing: 0.02em;
     color: var(--main-body);
     margin: unset;
@@ -54,7 +51,7 @@ h2 {
 h3 {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--main-body);
 }
 
@@ -62,7 +59,7 @@ h5 {
     font-family: var(--font-family);
     line-height: 156%;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--main-primary);
     margin: unset;
 }
@@ -81,7 +78,7 @@ h5 {
     font-family: var(--font-family);
     color: var(--main---white);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 200%;
 }
 
@@ -104,7 +101,7 @@ h5 {
     font-family: var(--font-family);
     color: var(--main-primary);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 200%;
 }
 
@@ -149,7 +146,7 @@ h5 {
 .logo > span {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 222%;
     color: var(--main-body);
     margin-left: 10px;
@@ -191,20 +188,10 @@ a {
     background: rgba(237, 233, 246, .25) center top/100% url(https://i.imgur.com/MiwJwOU.png) no-repeat;
 }
 
-.hero__content h1 {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--main-body);
-    margin: 0;
-}
-
 .hero__content p {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 150%;
     text-align: center;
     color: var(--main-body);
@@ -214,11 +201,15 @@ a {
 .hr-line {
     display: flex;
     justify-content: center;
-    padding: 0 0 48px 0;
 }
 
 .hr-line h3 {
     margin: 0 20px 0 20px;
+}
+hr{
+    margin-bottom: 48px;
+    color: #F4F5F4;
+    border-style: solid;
 }
 
 .list__sponsors {
@@ -228,14 +219,12 @@ a {
     max-width: 1180px;
     margin: auto;
 }
-
-.fundraising {
-    height: 1048px;
+.fundraising .container{
+    padding-bottom: 200px;
 }
 
 .fundraising__content {
     padding: 200px 0;
-    width: 1180px;
     height: 648px;
     margin: auto;
 }
@@ -254,7 +243,7 @@ a {
 
 .list__items-numbers p {
     font-family: var(--font-family);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 156%;
     color: var(--main-body);
 }
@@ -309,7 +298,7 @@ a {
 
 .list__items p {
     font-family: var(--font-family);
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--main-body);
     line-height: 24px;
     margin-bottom: 4px;
@@ -322,7 +311,8 @@ a {
 
 .for_projects .container {
     max-width: 1180px;
-    padding: 200px 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .for_projects__content h5 {
@@ -338,7 +328,7 @@ a {
     font-family: var(--font-family);
     max-width: 616px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 156%;
     color: var(--main-body);
 }
@@ -346,7 +336,7 @@ a {
 .list__item-description {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--main---gray);
     line-height: 24px;
 }
@@ -366,7 +356,8 @@ a {
 
 .for_investors .container {
     max-width: 1180px;
-    padding: 200px 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .about .container {
@@ -391,7 +382,7 @@ a {
 }
 
 .about__content p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 156%;
     color: var(--main-body);
     font-family: var(--font-family);
@@ -442,7 +433,7 @@ a {
 .footer__head p {
     font-family: var(--font-family);
     color: var(--main---gray-light);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 156%;
 }
 
@@ -459,7 +450,7 @@ a {
 
 .footer__form-field label {
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 171%;
     color: var(--main---gray-light);
     margin-bottom: 4px;
@@ -480,7 +471,7 @@ a {
 .footer__col-social h5 {
     font-family: var(--font-family);
     color: var(--main---gray-light);
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: underline;
 }
 
@@ -501,4 +492,72 @@ a {
 .footer__contacts {
     display: flex;
     gap: 40px;
+}
+@media screen and (max-width: 1420px) {
+    .container {
+        max-width: 1420px;
+        padding: 0 20px; !important;
+    }
+    body {
+        font-size: 1rem;
+    }
+    .list__sponsors{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero__content{
+        padding: 168px 0;
+        margin-bottom: 100px;
+    }
+    .fundraising__content{
+        padding: 100px 0;
+    }
+    .list__items-numbers li{
+        width: 500px;
+    }
+    .for_projects .container{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .for_investors .container{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .about .container{
+        justify-content: center;
+        padding: 150px 0 150px;
+    }
+    .about__content{
+        margin-left: 0;
+    }
+    .about img{
+        max-width: 0;
+    }
+    .main-footer{
+        padding: 100px 0 0 0;
+    }
+    .footer__cols{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__col-head{
+        margin-bottom: 100px;
+    }
+    .footer__form-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__contacts{
+        justify-content: flex-end;
+    }
+    .footer__social{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__col-social{
+        margin-bottom: 20px;
+    }
+
 }
