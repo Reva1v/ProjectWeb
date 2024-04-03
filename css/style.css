@@ -185,7 +185,7 @@ a {
     padding: 168px 385px;
     margin-bottom: 200px;
     border-radius: 24px;
-    background: rgba(237, 233, 246, .25) center top/100% url(https://i.imgur.com/MiwJwOU.png) no-repeat;
+    background: rgba(237, 233, 246, .25) center top url(https://i.imgur.com/MiwJwOU.png) no-repeat;
 }
 
 .hero__content p {
@@ -306,7 +306,7 @@ hr{
 
 .for_projects {
     border-radius: 250px 0 0 0;
-    background: rgba(237, 233, 246, .25) center top/100% no-repeat url(https://i.imgur.com/2naAUL9.png);
+    background: rgba(237, 233, 246, .25) center top no-repeat url(https://i.imgur.com/2naAUL9.png);
 }
 
 .for_projects .container {
@@ -347,7 +347,7 @@ hr{
 
 .for_investors {
     border-radius: 0 250px 0 0;
-    background: rgba(237, 233, 246, .25) center top/100% no-repeat url(https://i.imgur.com/spg7HvG.png);
+    background: rgba(237, 233, 246, .25) center top no-repeat url(https://i.imgur.com/spg7HvG.png);
 }
 
 .for_investors h2 {
@@ -402,7 +402,7 @@ hr{
 
 .main-footer {
     border-radius: 250px 0 0 0;
-    background: var(--main-body) center top/100% no-repeat url(https://i.imgur.com/6VXLbDM.png);
+    background: var(--main-body) center top no-repeat url(https://i.imgur.com/6VXLbDM.png);
     padding: 176px 0;
 }
 
