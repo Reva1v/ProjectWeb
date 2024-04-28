@@ -726,5 +726,8 @@ hr {
     hr{
         margin: unset;
     }
+    .footer__contacts{
+        gap: 30px;
+    }
 }
 
