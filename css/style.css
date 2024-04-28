@@ -628,15 +628,18 @@ hr {
     .for_investors {
         border-radius: unset;
     }
+
     .about__content .logo {
         justify-content: center;
     }
+
     .about__content h2 {
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-    .footer__form-fields{
+
+    .footer__form-fields {
         justify-content: center;
     }
 
@@ -695,13 +698,16 @@ hr {
     .list__items li {
         margin: 10px 0;
     }
-    .sponsors-footer{
+
+    .sponsors-footer {
         padding: 0 0 100px 0;
     }
-    .footer__head h2{
+
+    .footer__head h2 {
         align-items: center;
     }
-    .footer__head{
+
+    .footer__head {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -709,6 +715,11 @@ hr {
 }
 
 @media (max-width: 390px) {
+    .hero__content .btn__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .hero__content {
         margin-bottom: 50px;
     }
@@ -717,16 +728,20 @@ hr {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    .sponsors-footer{
+
+    .sponsors-footer {
         padding: unset;
     }
-    .about__content p{
+
+    .about__content p {
         padding: 0 20px;
     }
-    hr{
+
+    hr {
         margin: unset;
     }
-    .footer__contacts{
+
+    .footer__contacts {
         gap: 30px;
     }
 }
