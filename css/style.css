@@ -11,9 +11,9 @@
 :root {
     --font-family: "Poppins", sans-serif;
     --font-size--4rem: clamp(2rem, 1.243rem + 3.11vw, 4rem);
-    --font-size--3_25rem: clamp(1.625rem, 1.01rem + 2.52vw, 3.25rem);
+    --font-size--3_25rem: clamp(1.3rem, -0.093rem + 3.714vw, 3.25rem);
     --font-size--1_5rem: clamp(1rem, 0.811rem + 0.78vw, 1.5rem);
-    --font-size--1_125rem: clamp(1rem, 0.953rem + 0.19vw, 1.125rem);
+    --font-size--1_125rem: clamp(0.9rem, 0.739rem + 0.429vw, 1.125rem);
     --font-size--0_875rem: clamp(0.775rem, 0.737rem + 0.16vw, 0.875rem);
 }
 
@@ -535,9 +535,17 @@ hr {
         width: 500px;
     }
 
+    .for_projects {
+        border-radius: 125px 0 0 0;
+    }
+
     .for_projects .container {
         padding-top: 150px;
         padding-bottom: 150px;
+    }
+
+    .for_investors {
+        border-radius: 125px 0 0 0;
     }
 
     .for_investors .container {
@@ -560,6 +568,7 @@ hr {
 
     .main-footer {
         padding: 100px 0 0 0;
+        border-radius: 125px 0 0 0;
     }
 
     .footer__cols {
@@ -596,6 +605,9 @@ hr {
         position: unset;
         max-width: unset;
         margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     .list__items-numbers {
@@ -661,6 +673,10 @@ hr {
         padding-bottom: 100px;
     }
 
+    .fundraising__content h2 {
+        display: unset;
+    }
+
     .list__items-numbers ul {
         gap: 10px;
     }
@@ -699,6 +715,10 @@ hr {
         margin: 10px 0;
     }
 
+    .about__content p {
+        padding: 0 20px;
+    }
+
     .sponsors-footer {
         padding: 0 0 100px 0;
     }
@@ -731,10 +751,6 @@ hr {
 
     .sponsors-footer {
         padding: unset;
-    }
-
-    .about__content p {
-        padding: 0 20px;
     }
 
     hr {
