@@ -172,6 +172,15 @@ h5 {
     margin-left: 32px;
 }
 
+.main-nav button{
+    border: none;
+    outline: none;
+    background: none;
+    font-family: var(--font-family);
+    color: var(--main-body);
+    font-size: var(--font-size--1_125rem);
+}
+
 .main-nav .btn {
     margin-left: 32px;
 }
@@ -506,16 +515,6 @@ hr {
 }
 
 @media (max-width: 1420px) {
-    .container {
-        max-width: 1420px;
-        padding: 0 20px;
-    !important;
-    }
-
-    body {
-        font-size: 1rem;
-    }
-
     .list__sponsors {
         display: flex;
         flex-wrap: wrap;
@@ -661,16 +660,84 @@ hr {
 }
 
 @media (max-width: 600px) {
-    .main-nav {
-        display: none;
+    .ham-menu {
+        height: 50px;
+        width: 40px;
+        margin-left: auto;
+        position: relative;
     }
 
-    .main-header__content {
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: var(--main-primary);
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+
+    .main-header .container {
+        padding: unset;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .ham-menu {
+        margin-right: 20px;
+    }
+
+    .main-nav li {
+        margin: unset;
+    }
+
+    .main-nav ul {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .main-nav .btn {
+        margin: unset;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
         justify-content: center;
+        justify-items: center;
+        height: 200px;
+        width: 100%;
+        background-color: var(--main---white);
+        position: absolute;
+        top: -110%;
+        transition: .3s ease;
+        overflow-y: hidden;
+    }
+
+    .main-nav.active {
+        top: 13%;
     }
 
     .fundraising .container {
         padding-bottom: 100px;
+    }
+
+    .fundraising__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .fundraising__content h2 {
