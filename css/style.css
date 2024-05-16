@@ -712,6 +712,7 @@ hr {
 
     .ham-menu {
         margin-right: 20px;
+        z-index: 100;
     }
 
     .main-nav li {
@@ -728,23 +729,34 @@ hr {
     }
 
     .main-nav {
+        transform: translateY(-110%);
         display: flex;
         align-items: center;
         justify-content: center;
         justify-items: center;
-        height: 200px;
         width: 100%;
         background-color: var(--main---white);
-        position: absolute;
-        top: -110%;
         transition: .3s ease;
+        top: 0;
+        position: absolute;
         overflow-y: hidden;
+        min-height: 100svh;
     }
 
     .main-nav.active {
-        top: 13%;
+        transform: translateY(0);
+        min-height: 100svh;
+        position: fixed;
     }
 
+    .main-header__content.active{
+        justify-content: flex-end;
+    }
+
+    .main-header__content nav.active {
+        position: fixed;
+        z-index: 100;
+    }
     .fundraising .container {
         padding-bottom: 100px;
     }
