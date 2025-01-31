@@ -2,7 +2,7 @@ const hamMenu = document.querySelector(".ham-menu");
 
 const offScreenMenu = document.querySelector(".main-nav");
 
-const navHeader = document.querySelector(".main-header__content")
+const navHeader = document.querySelector("body")
 
 const navHeaderButton = document.querySelector(".main-header__content nav")
 

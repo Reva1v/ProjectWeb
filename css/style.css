@@ -199,7 +199,7 @@ a {
     padding: 168px 385px;
     margin-bottom: 200px;
     border-radius: 24px;
-    background: rgba(237, 233, 246, .25) url(https://i.imgur.com/MiwJwOU.png) no-repeat;
+    background: rgba(237, 233, 246, .25) url(../source/bg-vision-capital.png) no-repeat;
 }
 
 .hero__content .btn__wrapper {
@@ -326,7 +326,7 @@ hr {
 
 .for_projects {
     border-radius: 250px 0 0 0;
-    background: rgba(237, 233, 246, .25) no-repeat url(https://i.imgur.com/2naAUL9.png);
+    background: rgba(237, 233, 246, .25) no-repeat url(../source/bg-for-project.png);
 }
 
 .for_projects .container {
@@ -367,7 +367,7 @@ hr {
 
 .for_investors {
     border-radius: 0 250px 0 0;
-    background: rgba(237, 233, 246, .25) right no-repeat url(https://i.imgur.com/spg7HvG.png);
+    background: rgba(237, 233, 246, .25) right no-repeat url(../source/bg-for-investors.png);
     background-position-y: top;
 }
 
@@ -423,7 +423,9 @@ hr {
 
 .main-footer {
     border-radius: 250px 0 0 0;
-    background: var(--main-body) no-repeat url(https://i.imgur.com/6VXLbDM.png);
+    background: var(--main-body) no-repeat url(../source/bg-footer.png);
+    background-color: #23155B;
+    background-blend-mode: overlay;
     padding: 176px 0;
 }
 
@@ -737,7 +739,6 @@ hr {
         width: 100%;
         background-color: var(--main---white);
         transition: .3s ease;
-        top: 0;
         position: absolute;
         overflow-y: hidden;
         min-height: 100svh;
@@ -746,15 +747,16 @@ hr {
     .main-nav.active {
         transform: translateY(0);
         min-height: 100svh;
-        position: fixed;
+        /*position: fixed;*/
     }
 
-    .main-header__content.active{
-        justify-content: flex-end;
+    body.active{
+        /*justify-content: flex-end;*/
+        overflow: hidden;
     }
 
     .main-header__content nav.active {
-        position: fixed;
+        /*position: fixed;*/
         z-index: 100;
     }
     .fundraising .container {
